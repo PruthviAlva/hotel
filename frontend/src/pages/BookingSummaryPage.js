@@ -2,13 +2,11 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { bookingService, paymentService } from '../services/api';
 import { useBooking } from '../context/BookingContext';
-import { useAuth } from '../context/AuthContext';
 import '../styles/BookingSummaryPage.css';
 
 const BookingSummaryPage = () => {
   const navigate = useNavigate();
   const { selectedRooms, selectedHotel, guestDetails, searchParams, clearBooking, setBookingSummary } = useBooking();
-  const { user } = useAuth();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [paymentMethod, setPaymentMethod] = useState('credit_card');

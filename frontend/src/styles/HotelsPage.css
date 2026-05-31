@@ -1,0 +1,62 @@
+.hotels-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 80vh;
+}
+
+.hotels-header {
+  margin-bottom: 3rem;
+}
+
+.hotels-header h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.hotels-header p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.hotels-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.no-results {
+  text-align: center;
+  padding: 3rem;
+  background: #f9f9f9;
+  border-radius: 10px;
+}
+
+.no-results p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.loading-container,
+.error-container {
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.1rem;
+}
+
+.error-container {
+  color: #c33;
+  background: #fee;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .hotels-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .hotels-header h1 {
+    font-size: 1.5rem;
+  }
+}

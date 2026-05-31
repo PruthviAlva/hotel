@@ -1,0 +1,134 @@
+.admin-bookings-page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 80vh;
+}
+
+.admin-bookings-page h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.bookings-table-container {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+.bookings-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.bookings-table thead {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-bottom: 2px solid #ddd;
+}
+
+.bookings-table th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+.bookings-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.bookings-table tbody tr:hover {
+  background: #f9f9f9;
+}
+
+.booking-id {
+  font-family: monospace;
+  color: #667eea;
+  font-weight: 600;
+}
+
+.amount {
+  color: #48bb78;
+  font-weight: 600;
+}
+
+.status-select {
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.payment-badge {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.payment-badge.completed {
+  background: #c6f6d5;
+  color: #22543d;
+}
+
+.payment-badge.pending {
+  background: #feebc8;
+  color: #7c2d12;
+}
+
+.payment-badge.failed {
+  background: #fed7d7;
+  color: #742a2a;
+}
+
+.details-btn {
+  background: #667eea;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.details-btn:hover {
+  background: #5568d3;
+  transform: scale(1.05);
+}
+
+.error-container,
+.loading-container {
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.1rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.error-container {
+  color: #c33;
+  background: #fee;
+}
+
+@media (max-width: 768px) {
+  .admin-bookings-page {
+    padding: 1rem;
+  }
+  
+  .bookings-table {
+    font-size: 0.8rem;
+  }
+  
+  .bookings-table th,
+  .bookings-table td {
+    padding: 0.5rem;
+  }
+}

@@ -19,7 +19,7 @@ const RoomsPage = () => {
 
   useEffect(() => {
     fetchHotelAndRooms();
-  }, [hotelId]);
+  }, []);
 
   const fetchHotelAndRooms = async () => {
     try {

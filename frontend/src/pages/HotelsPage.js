@@ -12,7 +12,7 @@ const HotelsPage = () => {
 
   useEffect(() => {
     fetchHotels();
-  }, []);
+  }, );
 
   const fetchHotels = async () => {
     try {
